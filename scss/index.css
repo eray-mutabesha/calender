@@ -1,0 +1,68 @@
+.calendar {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px rgb(49, 49, 88);
+}
+.calendar .month {
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(49, 49, 88);
+  display: flex;
+  justify-content: center;
+}
+.calendar .month .date {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.calendar .month .date p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.calendar .month i {
+  cursor: pointer;
+  margin: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.calendar .weekdays {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding: 15px;
+}
+.calendar .weekdays div {
+  width: 14.2857142857%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.calendar .days {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 20;
+  flex-wrap: wrap;
+}
+.calendar .days div {
+  width: 14.2857142857px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.calendar .days div:hover:not(.today) {
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  background-color: rgb(145, 145, 173);
+}
+.calendar .days .today {
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(49, 49, 88);
+}
+.calendar .days .prev-date, .calendar .days .next-date {
+  opacity: 0.5;
+}/*# sourceMappingURL=index.css.map */
